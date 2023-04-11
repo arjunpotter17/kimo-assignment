@@ -1,12 +1,7 @@
 import React from 'react'
 
-
-
-
-
 const HeroBanner = () => {
 
- 
   return (
     <div className='flex justify-center items-center w-full background-img h-[30rem] md:h-[35rem]'>
       

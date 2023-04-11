@@ -7,7 +7,7 @@ const MobileNavbar:React.FC<MobileNavbarProps> = ({ setMenuState, highlights}) =
 
 
   return (
-    <div className='w-[100vw] h-full bg-[rgba(0,0,0,0.7)] border border-red-500 fixed top-0'>
+    <div className='w-full h-full bg-[rgba(0,0,0,0.7)] border border-red-500 fixed top-0'>
         <div className='bg-white w-[90vw] h-full fixed top-0 right-0 p-[24px] flex flex-col gap-12'>
             <div className='flex justify-end'>
             <button onClick={() => setMenuState(false)} className='py-4'><RxCross2 size={35}/></button>
