@@ -15,11 +15,11 @@ const Navbar:React.FC<{highlights: HighlightType[]}> = ({highlights}) => {
   }
 
   return (
-    <div className='font-IBM-Plexo'>
+    <div className='font-IBM-Plexo w-full'>
       {
-        <nav className='lg:hidden w-[100vw] flex justify-between px-[24px] items-center bg-white py-5'>
+        <nav className='lg:hidden w-full max-w-[1136px] flex justify-between px-[24px] items-center bg-white py-5'>
           <Link href='/'>
-          <div>
+          <div className='w-full'>
             <img src={logoSrc} alt='logo' />
           </div>
           </Link>
@@ -31,7 +31,7 @@ const Navbar:React.FC<{highlights: HighlightType[]}> = ({highlights}) => {
         
       }
       {
-        <nav className='hidden max-w-[1136px] px-[24px] navbar absolute bg-white rounded-[12px] lg:flex md:mx-5  lg:mx-auto justify-between items-center'>
+        <nav className='hidden max-w-[1136px] px-[24px] navbar absolute bg-white rounded-[12px] lg:flex md:mx-5 z-20 lg:mx-auto justify-between items-center'>
           <div className='flex justify-between items-center gap-[80px]'>
             <Link href='/'><img src={logoSrc} alt='logo' /></Link>
             <ul className='flex gap-[40px] menu-item'>
